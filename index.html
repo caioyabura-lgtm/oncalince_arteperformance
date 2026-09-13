@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111917">
+
+  <title>ONÇA-LINCE — Art & Performance #01</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+
+<body>
+
+  <!-- LOGIN -->
+  <section id="login-screen" class="login-screen">
+    <div class="login-orbit orbit-a"></div>
+    <div class="login-orbit orbit-b"></div>
+
+    <div class="login-content">
+      <p class="eyebrow">ONÇA-LINCE</p>
+
+      <h1>
+        Art & Performance
+        <span>#01</span>
+      </h1>
+
+      <p class="login-meta">
+        13.09.2026<br>
+        Private working session
+      </p>
+
+      <form id="login-form">
+        <label>
+          <span data-i18n="login.access"></span>
+          <input
+            id="login-email"
+            type="text"
+            autocomplete="username"
+            autocapitalize="none"
+            spellcheck="false"
+            required
+          >
+        </label>
+
+        <label>
+          <span data-i18n="login.password"></span>
+          <input
+            id="login-password"
+            type="password"
+            autocomplete="current-password"
+            required
+          >
+        </label>
+
+        <p id="login-error" class="login-error" aria-live="polite"></p>
+
+        <button type="submit" data-i18n="login.enter"></button>
+      </form>
+    </div>
+  </section>
+
+
+  <!-- EXPERIÊNCIA -->
+  <main id="experience" class="experience" hidden>
+
+    <header class="topbar">
+      <div class="mini-brand">
+        ONÇA—LINCE
+      </div>
+
+      <div class="topbar-session">
+        <span id="current-user"></span>
+        <div class="languages" aria-label="Language">
+        <button data-lang="pt">PT</button>
+        <span>·</span>
+        <button data-lang="en">EN</button>
+        <span>·</span>
+        <button data-lang="de">DE</button>
+        </div>
+        <button id="logout-button" type="button" data-i18n="login.logout"></button>
+      </div>
+    </header>
+
+    <p class="privacy-label" data-i18n="privacy.label"></p>
+
+
+    <div class="horizontal-shell">
+
+      <div class="horizontal-track">
+
+        <!-- 01 -->
+        <section class="panel panel-intro"
+                 data-section="0">
+
+          <div class="section-number">01</div>
+
+          <div class="intro-copy">
+            <p class="privacy-note" data-i18n="privacy.note"></p>
+            <p class="eyebrow" data-i18n="intro.eyebrow"></p>
+
+            <h2 data-i18n="intro.title"></h2>
+
+            <p class="hero-question"
+               data-i18n="intro.question"></p>
+
+            <div class="schedule">
+              <span>14:00–14:45 BRT</span>
+              <span>18:00–18:45 PT</span>
+              <span>19:00–19:45 DE</span>
+            </div>
+          </div>
+
+          <div class="organism organism-orbit">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+        </section>
+
+
+        <!-- 02 -->
+        <section class="panel panel-collective"
+                 data-section="1">
+
+          <div class="section-number">02</div>
+
+          <p class="eyebrow"
+             data-i18n="collective.eyebrow"></p>
+
+          <h2 data-i18n="collective.title"></h2>
+          <p class="people-category eyebrow" data-i18n="people.category"></p>
+
+          <div class="people-grid">
+            <div>
+              <strong>Mariana Tiago</strong>
+              <span>Bassoon / Performance</span>
+              <p class="person-bio" data-i18n="people.marianaBio"></p>
+            </div>
+
+            <div>
+              <strong>Ricarda Kreutz</strong>
+              <span>Harp / Performance</span>
+              <p class="person-bio" data-i18n="people.ricardaBio"></p>
+            </div>
+
+            <div>
+              <strong>Marta Domingues</strong>
+              <span>Composition / Performance Direction</span>
+            </div>
+
+            <div>
+              <strong>Lucimar Maria Rodrigues</strong>
+              <span>Costume / Creative Electronics</span>
+            </div>
+
+            <div>
+              <strong>Zoë Melo</strong>
+              <span>Concept Design</span>
+              <p class="person-bio" data-i18n="people.zoeBio"></p>
+              <a class="editorial-link" href="https://touch-for-good.com/" target="_blank" rel="noopener noreferrer">TOUCH ↗</a>
+            </div>
+
+            <div>
+              <strong>Caio Rodrigues</strong>
+              <span>Video Art / 3D</span>
+              <p class="person-bio" data-i18n="people.caioBio"></p>
+            </div>
+          </div>
+
+        </section>
+
+
+        <!-- 03 -->
+        <section class="panel panel-question"
+                 data-section="2">
+
+          <div class="section-number">03</div>
+
+          <div class="duality">
+            <span>JAGUAR</span>
+            <span>×</span>
+            <span>LYNX</span>
+          </div>
+
+          <p class="large-question"
+             data-i18n="animals.question"></p>
+
+          <div class="contrast-list">
+            <span>HEAT × COLD</span>
+            <span>DENSITY × OPENNESS</span>
+            <span>SOUTH AMERICA × EUROPE</span>
+          </div>
+
+        </section>
+
+
+        <!-- 04 -->
+        <section class="panel panel-references"
+                 data-section="3">
+
+          <div class="section-number">04</div>
+
+          <p class="eyebrow"
+             data-i18n="references.eyebrow"></p>
+
+          <h2 data-i18n="references.title"></h2>
+
+          <div class="reference-strip">
+
+            <article class="reference-item reference-marta">
+              <span>01</span>
+              <strong>Marta Domingues</strong>
+              <p data-i18n="references.marta"></p>
+              <p class="marta-bio" data-i18n="references.martaBio"></p>
+              <div class="marta-links">
+                <a href="https://www.martadomingues.com/" target="_blank" rel="noopener noreferrer" data-i18n="references.martaWebsite"></a>
+                <a href="https://www.martadomingues.com/works" target="_blank" rel="noopener noreferrer" data-i18n="references.martaWorks"></a>
+                <a href="https://cesem.fcsh.unl.pt/pessoa/marta-domingues/" target="_blank" rel="noopener noreferrer" data-i18n="references.martaCesem"></a>
+                <a href="https://linktr.ee/martadomingues" target="_blank" rel="noopener noreferrer" data-i18n="references.martaMore"></a>
+              </div>
+            </article>
+
+            <article class="reference-item">
+              <span>02</span>
+              <strong>Nuno Lobo</strong>
+              <p data-i18n="invitations.janelas"></p>
+              <p class="invitation-status" data-i18n="invitations.status"></p>
+            </article>
+
+            <article class="reference-item">
+              <span>03</span>
+              <strong>Mariana Tiago</strong>
+              <p>Harp + electronics</p>
+            </article>
+
+            <article class="reference-item magistri">
+              <span>04</span>
+              <strong>MAGISTRI — Jaime Reis</strong>
+              <p class="invitation-status" data-i18n="invitations.status"></p>
+
+              <p data-i18n="references.magistri"></p>
+
+              <a
+                href="https://youtu.be/ibkcqMKlNgw?si=M5Tx9U0eXzxJp2B9"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                PRIVATE PREVIEW ↗
+              </a>
+            </article>
+
+          </div>
+
+        </section>
+
+
+        <!-- 05 -->
+        <section class="panel panel-decisions"
+                 data-section="4">
+
+          <div class="section-number">05</div>
+
+          <p class="eyebrow">
+            MAGISTRI
+          </p>
+
+          <h2 data-i18n="magistri.title"></h2>
+          <p class="eyebrow" data-i18n="review.label"></p>
+          <p class="review-note" data-i18n="review.note"></p>
+
+          <div class="decision-dialogue">
+
+            <div>
+              <span>MARTA</span>
+              <p data-i18n="magistri.marta"></p>
+            </div>
+
+            <div>
+              <span>RICARDA</span>
+              <p data-i18n="magistri.ricarda"></p>
+            </div>
+
+          </div>
+
+        </section>
+
+
+        <section class="panel panel-invitations" data-section="5">
+          <div class="section-number">06</div>
+          <div class="invitation-intro">
+            <h2 data-i18n="invitations.title"></h2>
+            <p class="invitation-notice" data-i18n="invitations.note"></p>
+          </div>
+          <div class="invitation-people">
+            <article>
+              <p class="invitation-status" data-i18n="invitations.status"></p>
+              <h3>Nuno Lobo</h3>
+              <p data-i18n="invitations.nunoBio"></p>
+              <p class="work-caption" data-i18n="invitations.janelas"></p>
+              <a class="editorial-link" href="https://www.nunolobo.com/" target="_blank" rel="noopener noreferrer">NUNO LOBO ↗</a>
+            </article>
+            <article>
+              <p class="invitation-status" data-i18n="invitations.status"></p>
+              <h3>Jaime Reis</h3>
+              <p data-i18n="invitations.jaimeBio"></p>
+              <p class="work-caption" data-i18n="invitations.magistri"></p>
+            </article>
+          </div>
+        </section>
+
+        <!-- 06 -->
+        <section class="panel panel-repertoire"
+                 data-section="6">
+
+          <div class="section-number">07</div>
+
+          <h2>ASPEN TREE</h2>
+
+          <p class="large-question"
+             data-i18n="aspen.question"></p>
+
+          <p class="secondary-question"
+             data-i18n="aspen.accordion"></p>
+
+        </section>
+
+
+        <section class="panel panel-improvisation" data-section="7">
+          <div class="section-number">08</div>
+          <div class="improvisation-copy">
+            <p class="eyebrow" data-i18n="improvisation.eyebrow"></p>
+            <h2 data-i18n="improvisation.title"></h2>
+            <p class="improvisation-main" data-i18n="improvisation.main"></p>
+            <p class="improvisation-secondary" data-i18n="improvisation.secondary"></p>
+          </div>
+          <div class="improvisation-field">
+            <div class="improvisation-orbit" aria-hidden="true"></div>
+            <div class="improvisation-voice voice-harp"><strong>Ricarda Kreutz</strong><span data-i18n="improvisation.harp"></span></div>
+            <div class="improvisation-voice voice-electronics"><span data-i18n="improvisation.electronics"></span><strong>Marta Domingues</strong></div>
+            <div class="improvisation-voice voice-bassoon"><strong>Mariana Tiago</strong><span data-i18n="improvisation.bassoon"></span></div>
+          </div>
+          <div class="improvisation-questions">
+            <p data-i18n="improvisation.q1"></p>
+            <p data-i18n="improvisation.q2"></p>
+            <p data-i18n="improvisation.q3"></p>
+          </div>
+        </section>
+
+        <!-- Spatial pause: intentionally no visible text. -->
+        <section class="panel panel-spatial-array" data-section="8">
+          <div class="spatial-stage" aria-hidden="true">
+            <div class="speaker-system"></div>
+          </div>
+        </section>
+
+        <!-- 07 -->
+        <section class="panel panel-territories"
+                 data-section="9">
+
+          <div class="section-number">10</div>
+
+          <div class="territory territory-br">
+            <span>BR</span>
+            <strong>BELO HORIZONTE</strong>
+          </div>
+
+          <p class="premiere-question"
+             data-i18n="territories.question"></p>
+
+          <div class="territory territory-pt">
+            <span>PT</span>
+            <strong>LISBOA</strong>
+            <small>TBA — Teatro do Bairro Alto</small>
+          </div>
+
+        </section>
+
+
+        <!-- 08 -->
+        <section class="panel panel-economy"
+                 data-section="10">
+
+          <div class="section-number">11</div>
+
+          <p class="eyebrow"
+             data-i18n="economy.eyebrow"></p>
+
+          <div class="budget-value">
+            €30,000
+          </div>
+
+          <div class="budget-axis">
+            <span>COUNTRIES</span>
+            <span>DEPARTMENTS</span>
+            <span>PRODUCTION AREAS</span>
+          </div>
+
+        </section>
+
+
+        <!-- 09 -->
+        <section class="panel panel-scenography"
+                 data-section="11">
+
+          <div class="section-number">12</div>
+
+          <div class="scenography-intro">
+            <p class="eyebrow" data-i18n="scenography.eyebrow"></p>
+            <h2 data-i18n="scenography.title"></h2>
+            <p class="scenography-question" data-i18n="scenography.question"></p>
+            <img class="scenography-fauna" src="assets/fauna/aguatic_life.png" alt="" loading="lazy" decoding="async" aria-hidden="true">
+          </div>
+
+          <article class="scenography-direction scenography-air">
+            <h3 data-i18n="scenography.airTitle"></h3>
+            <figure class="scenography-media">
+              <div class="scenography-visual air-study" aria-hidden="true"><i></i><i></i><i></i></div>
+              <!-- Authorized local video only: set data-src to a local file and poster to a local image.
+                   The CSS study remains visible until playback succeeds, and on failure. -->
+              <video class="scenography-video" data-src="" muted loop playsinline preload="none" hidden aria-hidden="true"></video>
+              <figcaption data-i18n="scenography.airCaption"></figcaption>
+            </figure>
+            <p class="scenography-copy" data-i18n="scenography.airText"></p>
+            <a class="scenography-link" href="https://www.instagram.com/reel/DdGdvYHNYOS/" target="_blank" rel="noopener noreferrer" data-i18n="scenography.airLink"></a>
+            <p class="scenography-tags"><span data-i18n="scenography.tags.air"></span><span data-i18n="scenography.tags.textile"></span><span data-i18n="scenography.tags.foldable"></span><span data-i18n="scenography.tags.lightweight"></span><span data-i18n="scenography.tags.volume"></span></p>
+          </article>
+
+          <article class="scenography-direction scenography-textile">
+            <h3 data-i18n="scenography.textileTitle"></h3>
+            <figure class="scenography-media">
+              <div class="scenography-visual textile-study" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+              <figcaption data-i18n="scenography.textileCaption"></figcaption>
+            </figure>
+            <p class="scenography-copy" data-i18n="scenography.textileText"></p>
+            <a class="scenography-link" href="https://www.instagram.com/vanessabarragao_work/" target="_blank" rel="noopener noreferrer" data-i18n="scenography.textileLink"></a>
+            <p class="scenography-note" data-i18n="scenography.textileNote"></p>
+            <p class="scenography-tags"><span data-i18n="scenography.tags.texture"></span><span data-i18n="scenography.tags.fiber"></span><span data-i18n="scenography.tags.landscape"></span><span data-i18n="scenography.tags.organic"></span><span data-i18n="scenography.tags.modular"></span></p>
+          </article>
+
+          <div class="scenography-fabrication">
+            <h3 data-i18n="scenography.fabricationTitle"></h3>
+            <p class="scenography-copy" data-i18n="scenography.fabricationText"></p>
+            <p class="scenography-tags"><span data-i18n="scenography.tags.print"></span><span data-i18n="scenography.tags.paper"></span><span data-i18n="scenography.tags.led"></span><span data-i18n="scenography.tags.arduino"></span><span data-i18n="scenography.tags.motors"></span><span data-i18n="scenography.tags.movement"></span></p>
+          </div>
+
+        </section>
+
+
+        <!-- 10 -->
+        <section class="panel panel-conservation"
+                 data-section="12">
+
+          <div class="section-number">13</div>
+
+          <p class="eyebrow"
+             data-i18n="conservation.eyebrow"></p>
+
+          <h2 data-i18n="conservation.title"></h2>
+
+          <p class="large-question"
+             data-i18n="conservation.question"></p>
+
+        </section>
+
+
+        <!-- 11 -->
+        <section class="panel panel-closing"
+                 data-section="13">
+
+          <div class="section-number">14</div>
+
+          <h2 data-i18n="closing.title"></h2>
+
+          <div class="closing-questions">
+            <p data-i18n="closing.q1"></p>
+            <p data-i18n="closing.q2"></p>
+            <p data-i18n="closing.q3"></p>
+            <p data-i18n="closing.q4"></p>
+          </div>
+
+        </section>
+
+        <section class="panel panel-giveback" data-section="14">
+          <div class="section-number">15</div>
+          <div class="give-back">
+            <p class="eyebrow" data-i18n="improvisation.eyebrow"></p>
+            <strong data-i18n="closing.giveBack"></strong>
+
+            <p data-i18n="closing.ticket"></p>
+          </div>
+          <img class="closing-fauna" src="assets/fauna/ChatGPT Image 13 de set. de 2026, 07_48_21.png" width="1536" height="1024" alt="" aria-hidden="true" loading="lazy" decoding="async">
+
+        </section>
+
+        <section class="panel panel-network" data-section="15">
+          <div class="section-number">16</div>
+          <p class="eyebrow" data-i18n="network.caption"></p>
+          <img class="network-logos" src="assets/logos/rodape_logos.png" width="2172" height="724" alt="Cooperativa dos Empreendedores · Fab Lab Acousmonium · ONÇA-LINCE" loading="lazy" decoding="async">
+        </section>
+
+      </div>
+    </div>
+
+
+    <nav id="section-nav"
+         class="section-nav"
+         aria-label="Sections">
+    </nav>
+
+  </main>
+
+</body>
+</html>
