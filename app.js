@@ -126,6 +126,12 @@ const translations = {
     },
 
     references: {
+      vieiraStatus: "REFERÊNCIA / POSSÍVEL CONVIDADA",
+      vieiraRole: "composição · música mista · eletrónica",
+      vieiraBio: "Mariana Vieira é compositora portuguesa, formada em Composição pela Escola Superior de Música de Lisboa, onde estudou com Carlos Caires e Jaime Reis. O seu catálogo inclui música acusmática, mista e instrumental, e o seu percurso articula composição, tecnologia e produção artística. A sua música tem sido apresentada em festivais internacionais e recebeu distinções em composição orquestral e electroacústica.",
+      vieiraHistory: "Em 2016, Mariana Vieira apresentou no contexto do Laboratório de Música Mista da ESML uma obra para harpa e eletrónica.",
+      vieiraHistoryLink: "Harpa + eletrónica · 2016 ↗",
+      developmentCredit: "Concepção e desenvolvimento do site: Caio Rodrigues.",
       eyebrow: "Ouvir · observar · discutir",
       title: "Referências para a conversa",
       marta: "Seleção de obras para escuta e discussão.",
@@ -287,6 +293,12 @@ const translations = {
     },
 
     references: {
+      vieiraStatus: "ARTISTIC REFERENCE / POSSIBLE INVITEE",
+      vieiraRole: "composition · mixed music · electronics",
+      vieiraBio: "Mariana Vieira is a Portuguese composer who studied Composition at the Escola Superior de Música de Lisboa with Carlos Caires and Jaime Reis. Her catalogue includes acousmatic, mixed and instrumental music, and her practice connects composition, technology and artistic production. Her music has been presented at international festivals and received distinctions in orchestral and electroacoustic composition.",
+      vieiraHistory: "In 2016, Mariana Vieira presented a work for harp and electronics in the context of the Laboratório de Música Mista at ESML.",
+      vieiraHistoryLink: "Harp + electronics · 2016 ↗",
+      developmentCredit: "Website concept and development: Caio Rodrigues.",
       eyebrow: "Listen · observe · discuss",
       title: "References for the conversation",
       marta: "Selected works for listening and discussion.",
@@ -448,6 +460,12 @@ const translations = {
     },
 
     references: {
+      vieiraStatus: "KÜNSTLERISCHE REFERENZ / MÖGLICHER GAST",
+      vieiraRole: "Komposition · gemischte Musik · Elektronik",
+      vieiraBio: "Mariana Vieira ist eine portugiesische Komponistin, die an der Escola Superior de Música de Lisboa bei Carlos Caires und Jaime Reis Komposition studierte. Ihr Werk umfasst akusmatische, gemischte und instrumentale Musik; ihre Arbeit verbindet Komposition, Technologie und künstlerische Produktion. Ihre Musik wurde bei internationalen Festivals aufgeführt und erhielt Auszeichnungen für orchestrale und elektroakustische Komposition.",
+      vieiraHistory: "2016 präsentierte Mariana Vieira im Rahmen des Laboratório de Música Mista der ESML ein Werk für Harfe und Elektronik.",
+      vieiraHistoryLink: "Harfe + Elektronik · 2016 ↗",
+      developmentCredit: "Konzeption und Entwicklung der Website: Caio Rodrigues.",
       eyebrow: "Hören · beobachten · diskutieren",
       title: "Referenzen für das Gespräch",
       marta: "Ausgewählte Werke zum Hören und Diskutieren.",
