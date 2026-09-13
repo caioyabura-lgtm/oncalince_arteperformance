@@ -151,12 +151,12 @@
 
             <div>
               <strong>Marta Domingues</strong>
-              <span>Composition / Performance Direction</span>
+              <span data-i18n="people.martaRole"></span>
             </div>
 
             <div>
-              <strong>Lucimar Maria Rodrigues</strong>
-              <span>Costume / Creative Electronics</span>
+              <strong>Lucimar Maria</strong>
+              <span data-i18n="people.lucimarRole"></span>
             </div>
 
             <div>
@@ -388,17 +388,23 @@
 
           <div class="section-number">11</div>
 
-          <p class="eyebrow"
-             data-i18n="economy.eyebrow"></p>
-
-          <div class="budget-value">
-            €30,000
+          <div class="budget-intro">
+            <p class="eyebrow" data-i18n="economy.title"></p>
+            <div class="budget-value" id="budget-total"></div>
+            <p class="budget-question" data-i18n="economy.question"></p>
+            <p class="eyebrow" data-i18n="economy.eyebrow"></p>
           </div>
-
-          <div class="budget-axis">
-            <span>COUNTRIES</span>
-            <span>DEPARTMENTS</span>
-            <span>PRODUCTION AREAS</span>
+          <div class="budget-group">
+            <h3 data-i18n="economy.countriesTitle"></h3>
+            <ul id="budget-countries" class="budget-lines"></ul>
+          </div>
+          <div class="budget-group">
+            <h3 data-i18n="economy.departmentsTitle"></h3>
+            <ul id="budget-departments" class="budget-lines"></ul>
+          </div>
+          <div class="budget-group">
+            <h3 data-i18n="economy.areasTitle"></h3>
+            <ul id="budget-areas" class="budget-lines"></ul>
           </div>
 
         </section>

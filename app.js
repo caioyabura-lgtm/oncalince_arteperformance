@@ -1,3 +1,70 @@
+// Budget amounts in EUR. Leave undefined allocations as null.
+const budgetData = {
+  "total": 30000,
+  "countries": [
+    {
+      "id": "br",
+      "value": null
+    },
+    {
+      "id": "pt",
+      "value": null
+    },
+    {
+      "id": "de",
+      "value": null
+    }
+  ],
+  "departments": [
+    {
+      "id": "art",
+      "value": null
+    },
+    {
+      "id": "technical",
+      "value": null
+    },
+    {
+      "id": "production",
+      "value": null
+    },
+    {
+      "id": "international",
+      "value": null
+    },
+    {
+      "id": "communication",
+      "value": null
+    }
+  ],
+  "productionAreas": [
+    {
+      "id": "fees",
+      "value": null
+    },
+    {
+      "id": "travel",
+      "value": null
+    },
+    {
+      "id": "accommodation",
+      "value": null
+    },
+    {
+      "id": "equipment",
+      "value": null
+    },
+    {
+      "id": "venues",
+      "value": null
+    },
+    {
+      "id": "materials",
+      "value": null
+    }
+  ]
+};
+
 const translations = {
   pt: {
     improvisation: {
@@ -13,6 +80,8 @@ const translations = {
       "q3": "Mariana — como você imagina o fagote dentro deste espaço de improvisação?"
     },
     people: {
+      martaRole: "Composição",
+      lucimarRole: "Figurino",
       "category": "COLETIVO · MESA CRIATIVA ATUAL",
       "zoeBio": "Zoë Melo é fundadora da TOUCH, sediada em Los Angeles (EUA), onde presta consultoria a designers, marcas e ONGs. Seu trabalho articula design e impacto socioambiental, com foco em projetos que buscam gerar efeitos positivos para o ambiente e para as pessoas.",
       "ricardaBio": "Harpista com atuação em música de câmara e criação contemporânea. Integra o Alveolar Trio, formação de flauta, viola e harpa.",
@@ -72,7 +141,7 @@ const translations = {
     magistri: {
       title: "Uma possibilidade, não uma decisão.",
       marta:
-        "Na sua perspectiva como compositora e diretora de performance, MAGISTRI abre um diálogo interessante com a direção artística do ONÇA-LINCE?",
+        "Na sua perspectiva como compositora, MAGISTRI abre um diálogo interessante com a direção artística do ONÇA-LINCE?",
       ricarda:
         "Na sua perspectiva como harpista, você teria interesse em explorar uma possível versão desta obra para harpa?"
     },
@@ -90,6 +159,12 @@ const translations = {
     },
 
     economy: {
+      "title": "ESCALA ECONÔMICA",
+      "question": "Como distribuímos os recursos entre territórios, áreas e necessidades de produção?",
+      "countriesTitle": "PAÍSES",
+      "departmentsTitle": "DEPARTAMENTOS / ÁREAS",
+      "areasTitle": "NECESSIDADES DE PRODUÇÃO",
+      "labels": {"br": "Brasil", "pt": "Portugal", "de": "Alemanha", "art": "Arte / Criação", "technical": "Técnica", "production": "Produção", "international": "Internacional / Jurídico", "communication": "Comunicação", "fees": "Honorários", "travel": "Viagens", "accommodation": "Hospedagem", "equipment": "Equipamentos", "venues": "Espaços / Teatros", "materials": "Materiais / Cenografia"},
       eyebrow:
         "A escala econômica dentro da qual estamos criando"
     },
@@ -166,6 +241,8 @@ const translations = {
       "q3": "Mariana — how do you imagine the bassoon within this improvisational space?"
     },
     people: {
+      martaRole: "Composition",
+      lucimarRole: "Costume",
       "category": "COLLECTIVE · CURRENT CREATIVE TABLE",
       "zoeBio": "Zoë Melo is the founder of TOUCH, based in Los Angeles (USA), where she consults designers, brands and NGOs. Her work connects design and social-environmental impact, with a focus on projects seeking positive outcomes for people and the environment.",
       "ricardaBio": "Harpist active in chamber music and contemporary performance. She is a member of the Alveolar Trio, for flute, viola and harp.",
@@ -225,7 +302,7 @@ const translations = {
     magistri: {
       title: "A possibility, not a decision.",
       marta:
-        "From your perspective as composer and performance director, does MAGISTRI open an interesting dialogue with the artistic direction of ONÇA-LINCE?",
+        "From your perspective as composer, does MAGISTRI open an interesting dialogue with the artistic direction of ONÇA-LINCE?",
       ricarda:
         "From your perspective as harpist, would you be interested in exploring a possible harp version of this work?"
     },
@@ -243,6 +320,12 @@ const translations = {
     },
 
     economy: {
+      "title": "ECONOMIC SCALE",
+      "question": "How do we distribute resources across territories, areas and production needs?",
+      "countriesTitle": "COUNTRIES",
+      "departmentsTitle": "DEPARTMENTS / AREAS",
+      "areasTitle": "PRODUCTION AREAS",
+      "labels": {"br": "Brazil", "pt": "Portugal", "de": "Germany", "art": "Art / Creation", "technical": "Technical", "production": "Production", "international": "International / Legal", "communication": "Communication", "fees": "Fees", "travel": "Travel", "accommodation": "Accommodation", "equipment": "Equipment", "venues": "Venues / Theatres", "materials": "Materials / Scenography"},
       eyebrow:
         "The economic scale within which we are creating"
     },
@@ -319,6 +402,8 @@ const translations = {
       "q3": "Mariana — wie stellst du dir das Fagott in diesem improvisatorischen Raum vor?"
     },
     people: {
+      martaRole: "Komposition",
+      lucimarRole: "Kostüm",
       "category": "KOLLEKTIV · AKTUELLE KREATIVE RUNDE",
       "zoeBio": "Zoë Melo ist Gründerin von TOUCH mit Sitz in Los Angeles (USA), wo sie Designer:innen, Marken und NGOs berät. Ihre Arbeit verbindet Design mit sozial-ökologischer Wirkung und konzentriert sich auf Projekte, die positive Auswirkungen für Menschen und Umwelt anstreben.",
       "ricardaBio": "Harfenistin mit Tätigkeit in Kammermusik und zeitgenössischer Aufführungspraxis. Sie ist Mitglied des Alveolar Trios für Flöte, Viola und Harfe.",
@@ -378,7 +463,7 @@ const translations = {
     magistri: {
       title: "Eine Möglichkeit, keine Entscheidung.",
       marta:
-        "Öffnet MAGISTRI aus deiner Perspektive als Komponistin und Performance-Regisseurin einen interessanten Dialog mit der künstlerischen Richtung von ONÇA-LINCE?",
+        "Öffnet MAGISTRI aus deiner Perspektive als Komponistin einen interessanten Dialog mit der künstlerischen Richtung von ONÇA-LINCE?",
       ricarda:
         "Hättest du aus deiner Perspektive als Harfenistin Interesse daran, eine mögliche Fassung dieses Werks für Harfe zu erforschen?"
     },
@@ -396,6 +481,12 @@ const translations = {
     },
 
     economy: {
+      "title": "WIRTSCHAFTLICHER RAHMEN",
+      "question": "Wie verteilen wir die Ressourcen auf Territorien, Bereiche und Produktionsbedarfe?",
+      "countriesTitle": "LÄNDER",
+      "departmentsTitle": "ABTEILUNGEN / BEREICHE",
+      "areasTitle": "PRODUKTIONSBEDARFE",
+      "labels": {"br": "Brasilien", "pt": "Portugal", "de": "Deutschland", "art": "Kunst / Kreation", "technical": "Technik", "production": "Produktion", "international": "Internationales / Recht", "communication": "Kommunikation", "fees": "Honorare", "travel": "Reisen", "accommodation": "Unterkunft", "equipment": "Ausstattung", "venues": "Räume / Theater", "materials": "Materialien / Szenografie"},
       eyebrow:
         "Der wirtschaftliche Rahmen, in dem wir gestalten"
     },
@@ -617,6 +708,61 @@ let currentLanguage =
   localStorage.getItem("oncalince-language") || "pt";
 
 
+/* Budget: the three groups are independent views of the same total. */
+function formatBudgetEuro(value) {
+  return new Intl.NumberFormat("en-IE", {
+    style: "currency", currency: "EUR", maximumFractionDigits: 2
+  }).format(value).replace(/\.00$/, "");
+}
+
+function renderBudgetGroup(selector, items) {
+  const list = document.querySelector(selector);
+  const fragment = document.createDocumentFragment();
+  items.forEach(item => {
+    const row = document.createElement("li");
+    const label = document.createElement("span");
+    label.dataset.i18n = `economy.labels.${item.id}`;
+    label.textContent = getValue(translations[currentLanguage], label.dataset.i18n) || item.id;
+    const amount = document.createElement("span");
+    amount.className = "budget-amount";
+    const defined = typeof item.value === "number" && Number.isFinite(item.value) && item.value >= 0;
+    const percent = defined && Number.isFinite(budgetData.total) && budgetData.total > 0
+      ? item.value / budgetData.total * 100 : null;
+    amount.textContent = defined ? formatBudgetEuro(item.value) : "—";
+    if (percent !== null) {
+      const share = document.createElement("small");
+      share.textContent = new Intl.NumberFormat(currentLanguage, { maximumFractionDigits: 2 }).format(percent) + "%";
+      amount.appendChild(share);
+    }
+    const axis = document.createElement("span");
+    axis.className = "budget-line";
+    axis.setAttribute("aria-hidden", "true");
+    if (percent !== null) {
+      const fill = document.createElement("span");
+      fill.style.width = `${Math.min(100, percent)}%`;
+      axis.appendChild(fill);
+    }
+    row.append(label, amount, axis);
+    fragment.appendChild(row);
+  });
+  list.replaceChildren(fragment);
+}
+
+function renderBudgetCountries() {
+  const total = budgetData.total;
+  document.querySelector("#budget-total").textContent =
+    typeof total === "number" && Number.isFinite(total) && total >= 0 ? formatBudgetEuro(total) : "—";
+  renderBudgetGroup("#budget-countries", budgetData.countries);
+}
+
+function renderBudgetDepartments() {
+  renderBudgetGroup("#budget-departments", budgetData.departments);
+}
+
+function renderBudgetAreas() {
+  renderBudgetGroup("#budget-areas", budgetData.productionAreas);
+}
+
 function getValue(object, path) {
   return path.split(".").reduce(
     (value, key) => value?.[key],
@@ -668,6 +814,10 @@ function applyLanguage(language) {
         button.dataset.lang === language
       );
     });
+
+  renderBudgetCountries();
+  renderBudgetDepartments();
+  renderBudgetAreas();
 }
 
 

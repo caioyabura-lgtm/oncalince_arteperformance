@@ -595,12 +595,20 @@ a {
   line-height: .8;
 }
 
-.budget-axis {
-  display: flex;
-  gap: 40px;
-  margin-top: 60px;
-  font-size: .72rem;
-  letter-spacing: .14em;
+.panel.panel-economy { width: max-content; display: grid; grid-template-columns: 65vw repeat(3, minmax(280px, 29vw)); gap: 5vw; align-items: center; }
+.budget-question { font-size: clamp(1rem, 1.5vw, 1.4rem); line-height: 1.45; max-width: 40em; margin: 40px 0 24px; }
+.budget-intro > .eyebrow:first-child { margin-bottom: 32px; }
+.budget-group h3 { font-size: .74rem; letter-spacing: .12em; font-weight: 400; margin: 0 0 24px; }
+.budget-lines { list-style: none; margin: 0; padding: 0; }
+.budget-lines li { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: baseline; gap: 10px 18px; margin-top: 20px; font-size: .88rem; line-height: 1.35; }
+.budget-lines li > span:first-child { text-transform: uppercase; }
+.budget-amount { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.budget-amount small { display: block; font-size: .7rem; opacity: .65; margin-top: 4px; }
+.budget-line { grid-column: 1 / -1; height: 1px; background: #f1eee42e; }
+.budget-line > span { display: block; height: 1px; background: var(--paper); }
+@media (max-width: 800px) {
+  .panel.panel-economy { width: 100%; grid-template-columns: minmax(0, 1fr); gap: 48px; }
+  .panel-economy .budget-value { font-size: clamp(3.08rem, 15.4vw, 6.93rem); }
 }
 
 
