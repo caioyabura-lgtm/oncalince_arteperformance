@@ -585,6 +585,13 @@ const nav = document.querySelector("#section-nav");
 // Set email when an actual guest address is supplied; access remains valid.
 const USERS = [
   {
+    "id": "rogerio",
+    "name": "Rogério Vasconcelos Barbosa",
+    "access": "rogerio",
+    "email": "",
+    "password": "Atlas58Som"
+  },
+  {
     "id": "mariana",
     "name": "Mariana Tiago",
     "access": "mariana",
